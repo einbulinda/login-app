@@ -1,0 +1,33 @@
+{
+  "name": "login_and_registration",
+  "version": "1.0.0",
+  "description": "Login Form that allows user to register, and login to web system with MySQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einbulinda/loginFormWithMySQL.git"
+  },
+  "keywords": [
+    "html",
+    "SQL",
+    "MySQL",
+    "Bootstrap",
+    "Login",
+    "Registration"
+  ],
+  "author": "Einstein Bulinda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/einbulinda/loginFormWithMySQL/issues"
+  },
+  "homepage": "https://github.com/einbulinda/loginFormWithMySQL#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1"
+  }
+}

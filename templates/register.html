@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/style.css" />
+
+    <title>Node Login & Registration</title>
+  </head>
+  <body class="register-page">
+    <header></header>
+    <main>
+      <form
+        id="register"
+        method="POST"
+        action="/registerUser"
+        class="row g-3 needs-validation mx-auto my-5 p-3 register"
+        novalidate
+      >
+        <h2 class="text-center">Register an account</h2>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <div class="invalid-feedback">First name is mandatory</div>
+            <label for="firstName">First Name</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+            <div class="invalid-feedback">Last name is mandatory.</div>
+            <label for="lastName">Last Name</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <div class="invalid-feedback">Password is mandatory.</div>
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+            <div class="invalid-feedback">Please confirm your password.</div>
+            <label for="confirmPassword">Confirm Password</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <div class="invalid-feedback">Please enter your email address.</div>
+            <label for="email">Email Address</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-floating">
+            <select
+              class="form-select"
+              id="gender"
+              name="gender"
+              aria-label="Select Gender"
+              required
+            >
+              <option value="">Please select gender</option>
+              <option value="male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <div class="invalid-feedback">Please select your gender</div>
+            <label for="gender">Gender</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-custom d-block mx-auto">
+            Register Account
+          </button>
+          <p class="text-center white-text">
+            Have an account already? <a href="/signin">Sign In</a>
+          </p>
+        </div>
+      </form>
+    </main>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="/public/formValidate.js"></script>
+  </body>
+</html>
